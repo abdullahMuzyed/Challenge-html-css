@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Helvetica;
+}
+.challenge{
+    background-color: rgb(224, 222, 222);
+    margin: 60px auto;
+    height: 416px;
+    width: 355px;
+    padding: 25px;
+    border: 3px solid black;
+    border-radius: 7px;
+}
+.quadrants{
+    background-color: rgb(170, 123, 115); 
+    color: white;
+    width: 270px;
+    height: 20rem; 
+    padding: 10px; 
+    margin: auto; 
+}
+.quadrants-1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 260px;
+    height: 150px; 
+}
+
+.quadrants-upper{
+    display: flex;
+    /* flex-direction: row;
+    justify-content: center;
+    align-items: center; */
+    
+}
+.quadrants-lower{
+    display: flex;
+    /* flex-direction: row;
+    justify-content: center;
+    align-items: center; */
+}
+
+.solutions{
+    background-color: #3498db;
+}
+
+.shortest{
+    background-color: #ff6545;
+}
+.first{
+    background-color: #44bfa3;
+}
+.authored{
+    background-color: #33485f;
+}
+.quadrants-title{
+    margin-bottom:15px;
+    font-size: 20px;
+}
+.quadrants-number{
+  font-size: 20px;
+}
+.card-title{
+    margin-bottom: 20px;
+    color: rgb(51, 19, 19);
+}
+
+@media only  screen and (max-width:420px) {
+    .quadrants-upper{
+        flex-direction: column;
+    }
+    .quadrants-lower{
+        flex-direction: column;
+    }
+    .challenge{
+        height: 45rem;
+    }
+    .quadrants{
+        height: 39rem;
+        width: 280px;
+    }
+}
