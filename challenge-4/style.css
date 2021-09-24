@@ -1,0 +1,128 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Rubik", sans-serif;
+    color: #444;
+  }
+  .header{
+      /* background-image: url(images/hero.jpg); */
+      background-image: linear-gradient(
+            rgba(34, 34, 34, 0.6),
+            rgba(34, 34, 34, 0.6)
+          ),
+          url(images/hero.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 100vh;
+      color: #fff;
+      position: relative;
+  }
+  .container{
+      /* width: 1200px; OR:80% */
+      width: 80%;
+      margin: 0 auto; /*left:auto; right:auto*/
+  }
+  .header-links{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 20px;
+      font-weight: 700;
+      padding-top: 32px;
+      
+  }
+  .header-links a{
+      text-decoration: none;
+      color: #fff;
+  }
+  .header-links a:active{
+      color:#e67e22; ;
+  }
+  .header-container{
+      /* width: 1200px; */
+      width: 80%;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+  }
+  .header-container-inner{
+    width: 48%;
+  }
+  .header-container-inner h1{
+      font-size: 52px;
+      margin-bottom: 23px;
+      line-height: 1.05;
+  }
+  .header-container-inner p {
+    font-size: 20px;
+    line-height: 1.6;
+    margin-bottom: 48px;
+  }
+   .btn {
+        font-size: 20px;
+        font-weight: 600;
+        background-color: #e67e22;
+        color: #fff;
+        display: inline-block;
+        padding: 16px 32px;
+        border-radius: 9px;
+      } 
+      section{
+        padding: 96px 0;
+        background-color: #f7f7f7;
+      }
+      section .container h2 {
+        font-size: 44px;
+        margin-bottom: 48px;
+      }
+      section .container p{
+        font-size: 20px;
+        line-height: 1.6;
+        margin-bottom: 48px;
+      }
+
+
+      @media (max-width:1111px){
+          .header-container{
+              padding-top: 50px;
+          }
+          .header-container-inner{
+              width: 100%;
+          }
+          section{
+              padding-top:120px;
+          }
+
+      }
+      @media (max-width:810px){
+        .header-container{
+            padding-top: 80px;
+        }
+      }
+      @media (max-width:440px){
+        .header-container{
+            padding-top: 150px;
+        }
+        .header-container{
+            width: 100%;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-top: 58px;
+        }
+        .header-container-inner{
+            width: 100%;
+        }
+        .header-container-inner h1{
+            font-size: 42;
+            margin-bottom: 18;
+
+        }
+        .container h2{
+            margin-bottom: 25px;
+        }
+      }
+
